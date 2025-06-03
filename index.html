@@ -18,7 +18,7 @@
     <section class="capa" id="capa">
         <div class="conteudo-capa">
             <h1 class="titulo-principal">Para o Amor da Minha Vida</h1>
-            <button id="botaoInicio" class="botao-romantico">Abrir Nosso Presente</button>
+            <button id="botaoInicio" class="botao-romantico">Abra seu presente</button>
         </div>
     </section>
 
@@ -26,15 +26,17 @@
     <main class="conteudo-principal hidden">
         <!-- Seção Tempo Juntos (seu código atual) -->
         <section class="secao-tempo">
+            <button id="segredo" onclick="abrirPaginaSecreta()"></button>
             <h1 class="titulo">Nossa História</h1>
+            
             <h2 class="subtitulo">Estamos juntos há:</h2>
             <div class="contador" id="tempo1">Carregando...</div>
 
             <h2 class="subtitulo">Nosso primeiro beijo foi há:</h2>
             <div class="contador2" id="tempo2">Carregando...</div>
         </section>
-
-        <!-- Galeria de Fotos (seu carrossel atual) -->
+        <br>
+       
         <section class="secao-galeria">
             <div class="carrossel2">
                 <div class="carrossel">
@@ -79,8 +81,21 @@
                 <p>Pontuação: <span id="pontuacao">0</span></p>
             </div>
         </section>
+       <section class="secao-musica">
+  <h2>Nossa Trilha Sonora 🎶</h2>
+  <div class="spotify-player">
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/3eB4OrCZEJVmuKmbg59gaP?utm_source=generator"
+      width="100%" height="152" frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+        <h2 id="mensagem"></h2>
+        <div id="segredo" onclick="abrirPaginaSecreta()"></div>
     </main>
-
+    
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="nos.js"></script>
 </body>

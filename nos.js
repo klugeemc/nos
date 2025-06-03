@@ -117,6 +117,13 @@ function iniciarMapa() {
     L.marker([-29.711185689356896, -53.71712859451384]).addTo(mapa)
         .bindPopup('Onde nos conhecemos <3')
         .openPopup();
+    
+     L.marker([-29.647496498909238, -53.26069457886921]).addTo(mapa)
+        .bindPopup('Pedido de namoro')
+        .openPopup();
+    L.marker([-29.667201397557047, -53.794979647193124]).addTo(mapa)
+        .bindPopup('Não preciso explicar ksksk')
+        .openPopup();
 }
 
 // 4. Jogo dos Corações
@@ -173,3 +180,20 @@ function criarConfete() {
 
 // Iniciar mapa quando a página carregar
 window.onload = iniciarMapa;
+// Trocar automaticamente os slides a cada 3 segundos
+setInterval(() => {
+  mudarSlide(1); // Passa para o próximo slide
+}, 3000);
+const texto = "Pra ter seu presente de verdade, espere uns dias...";
+let i = 0;
+function digitar() {
+  if (i < texto.length) {
+    document.getElementById("mensagem").innerHTML += texto.charAt(i);
+    i++;
+    setTimeout(digitar, 100);
+  }
+}
+digitar();
+function abrirPaginaSecreta() {
+  window.location.href = "secreto.html";
+}

@@ -17,7 +17,8 @@ body {
 }
 
 .subtitulo,
-.contador, .contador2{
+.contador,
+.contador2 {
   font-family: "Radio Canada", sans-serif;
   font-size: 35px;
 
@@ -81,112 +82,125 @@ body {
 .botao:hover {
   background: #d32512;
 }
-.contador, .contador2{
-  background-color: #d32512;
-}
+
 /* Estilos da Capa */
 .capa {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgs/fundo-capa.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    transition: opacity 1s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("imgs/fundo-capa.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  transition: opacity 1s;
 }
 
 .conteudo-capa {
-    max-width: 800px;
-    padding: 20px;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .titulo-principal {
-    font-family: 'Knewave', cursive;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-family: "Knewave", cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .botao-romantico {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    font-family: 'Radio Canada', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  font-family: "Radio Canada", sans-serif;
 }
 
 .botao-romantico:hover {
-    background-color: #ff5252;
-    transform: scale(1.05);
+  background-color: #ff5252;
+  transform: scale(1.05);
 }
 
 /* Seção de Motivos */
 .secao-motivos {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .motivos-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 
 .motivo-texto {
-    margin-top: 20px;
-    font-size: 40px;
-    min-height: 80px;
-    padding: 15px;
-    background-color: #750000;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  font-size: 40px;
+  min-height: 80px;
+  padding: 15px;
+  background-color: #750000;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Mapa */
 #mapa {
-    height: 400px;
-    width: 90%;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  height: 400px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Jogo dos Corações */
 .secao-jogo {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 #areaJogo {
-    height: 300px;
-    width: 100%;
-    position: relative;
-    margin: 20px 0;
-    border: 2px dashed #ff6b6b;
-    border-radius: 10px;
-    overflow: hidden;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+  border: 2px dashed #ff6b6b;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .coracao {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.2s;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .coracao:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+.secao-galeria {
+  display: flex;
+  justify-content: center;
+}
+#segredo{
+    background-color: #750000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
